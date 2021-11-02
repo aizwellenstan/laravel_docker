@@ -10,3 +10,4 @@ help:
 run:
 	@echo "Start Container Use default setting (listen web on 8080)"
 	@docker-compose up -d
+	@docker-compose exec php-fpm composer install
